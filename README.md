@@ -17,16 +17,26 @@ I used [data](https://www.kaggle.com/tiredgeek/predict-bo-trial) from Kaggle, wh
 -   **n&gt;&gt;p**: There are many observations (1.9 million) relative to the number of predictors (22).
 
 
-##Tasks
+## Tasks
 
 ### Data Wrangling 
-[x] Handling inconsistent column names and datatype
-[x] Missing Data handling
-[x] Removal of duplicate rows
-[x] Handling columns with repetitive values
-[x] Handling the outliers
-[x] 
+- [x] Handling inconsistent column names and datatype
+- [x] Missing Data handling
+- [] Removal of duplicate rows
+- [] Handling columns with repetitive values
+- [] Handling the outliers
+- [] Write the clean data into a new file for further steps
 
+### Data trend analysis
+
+- [] Relationship among features
+- [] Data questioning
+
+### Model training and validation
+
+- [] train-test split of the data
+- [] Model training
+- [] Model Tuning and cross validation
 
 ## Tests
 
