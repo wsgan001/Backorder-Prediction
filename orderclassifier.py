@@ -102,11 +102,12 @@ def eval_result(true_pos, true_neg, false_pos, false_neg):
 
 def eval_model(clf, data):
     # raise NotImplementedError('Not implemented')
-    result = clf.predict(data[:,1:22])
+    result = clf.predict(data[:, 1:22])
     print(result.shape)
     print(result)
     true_pos, true_neg, false_pos, false_neg = count_results(data, result)
     eval_result(true_pos, true_neg, false_pos, false_neg)
+
 
 def predict(data, clf):
     raise NotImplementedError('Not implemented')
