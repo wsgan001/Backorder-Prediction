@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import scipy as sp
 import sklearn as sk
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib as mpl
 import matplotlib.pylab as plt
 from mpl_toolkits.mplot3d import Axes3D
