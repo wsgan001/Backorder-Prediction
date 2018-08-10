@@ -244,15 +244,36 @@ def train_from_csv_data(data_file, model_file):
 def build_classifier_sample():
     # raise NotImplementedError('Not implemented')
     train, valid = read_data('data/train.csv', 'data/test.csv')
-    
+    print(valid)
+
+    print(valid[:, 1:-1].shape)
+    count_pos_neg(valid)
+    print(train[:, 1:-1].shape)
+    count_pos_neg(train)
+
+    duplicate_train = duplicate_data(train, 10)
+    count_pos_neg(duplicate_data)
+
+    train_write(duplicate_data, 'model/rf_d_duplicate_10.model')
 
 
 def eval_result_sample(model_file, model_name):
-    raise NotImplementedError('Not implemented')
+    # raise NotImplementedError('Not implemented')
+    train, valid = read_data('data/d_train_set.csv', 'data/d_valid_set.csv')
+    print(valid[:, 1:-1].shape)
+    count_pos_neg(valid)
+    print(valid[:, 1:-1].shape)
+    count_pos_neg(train)
+
+    clf = read_model(model_file)
+    eval_model(clf, valid)
+    plot_roc(valid, clf, model_name)
 
 
 def eval_result_rf():
-    raise NotImplementedError('Not implemented')
+    # raise NotImplementedError('Not implemented')
+    eval_result_sample("model/rf_d_duplicate.model", "random forest")
+
 
 
 if __name__ == '__main__':
