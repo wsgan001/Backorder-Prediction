@@ -6,15 +6,16 @@ import time
 
 from sklearn import metrics
 from sklearn import svm
-from sklearn.ensemble import AdaBoostClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
 from sklearn.metrics import auc
+from sklearn.metrics import precision_recall_curve
+from sklearn.neural_network import MLPClassifier
+
+
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from sklearn.metrics import precision_recall_curve
-from sklearn.neural_network import MLPClassifier
 
 
 def read_dataset(train_prob):
@@ -273,7 +274,6 @@ def eval_result_sample(model_file, model_name):
 def eval_result_rf():
     # raise NotImplementedError('Not implemented')
     eval_result_sample("model/rf_d_duplicate.model", "random forest")
-
 
 
 if __name__ == '__main__':

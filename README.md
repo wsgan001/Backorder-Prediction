@@ -1,9 +1,6 @@
 # Backorder Prediction Modeling
 Personal Data Analysis project of Backorder Prediction using Kaggle dataset 
 
-## Background and Motivation
-
-
 ## Data
 I used [data](https://www.kaggle.com/tiredgeek/predict-bo-trial) from Kaggle, which had 1.9 million observations of parts in an 8 week period. The source of the data is unreferenced.
 
@@ -30,18 +27,15 @@ I used [data](https://www.kaggle.com/tiredgeek/predict-bo-trial) from Kaggle, wh
 ### Install
 ``` pip install requirements.txt```
 
-### Usage
-
-
 
 ## Tasks
 ### Data Wrangling 
-- [] Handling inconsistent column names and datatype
-- [] Missing Data handling
-- [] Removal of duplicate rows
-- [] Handling columns with repetitive values
-- [] Handling the outliers
-- [] Write the clean data into a new file for further steps
+- [x] Handling inconsistent column names and datatype
+- [x] Missing Data handling
+- [x] Removal of duplicate rows
+- [x] Handling columns with repetitive values
+- [x] Handling the outliers
+- [x] Write the clean data into a new file for further steps
 
 ### Data trend analysis
 
